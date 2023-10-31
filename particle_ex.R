@@ -410,7 +410,7 @@ set.seed(ii)
   tau2<-0.09059663
   tau<-sqrt(tau2)
   theta=1
-  x0<-rnorm(1,alpha/(1-beta),sd=tau/sqrt(1-phi^2))
+  x0<-rnorm(1,alpha/(1-phi),sd=tau/sqrt(1-phi^2))
 x<-rnorm(1,alpha+phi*x0,sd=tau)
 y<-rnorm(1,0,sd=sqrt(theta)*exp(x/2))
 for(i in 2:n){
